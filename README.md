@@ -1,7 +1,7 @@
 # Fake_News_Data_Cup
 
 ## Environment:
-- Python3.6
+- Python 3.7
 - pipenv package manager
 
 ## Set up environment
