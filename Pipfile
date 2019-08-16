@@ -1,0 +1,40 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+ipykernel = "*"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+scipy = "*"
+ipython = "*"
+jupyter = "*"
+sympy = "*"
+nose = "*"
+scikit-learn = "*"
+seaborn = "*"
+jupyterlab = "*"
+scikit-image = "*"
+opencv-contrib-python = "*"
+imageio = "*"
+scikit-video = "*"
+spotipy = "*"
+"beautifulsoup4" = "*"
+yolk = "*"
+nltk = "*"
+pandas-profiling = "*"
+
+
+[dev-packages]
+
+pylint = "*"
+
+
+[requires]
+
+python_version = "3.6"
