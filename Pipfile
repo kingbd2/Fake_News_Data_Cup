@@ -1,40 +1,24 @@
 [[source]]
-
-url = "https://pypi.python.org/simple"
-verify_ssl = true
 name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
 
+[dev-packages]
 
 [packages]
-
 ipykernel = "*"
 pandas = "*"
 numpy = "*"
 matplotlib = "*"
-scipy = "*"
-ipython = "*"
-jupyter = "*"
-sympy = "*"
-nose = "*"
+jupyterlab = "*"
 scikit-learn = "*"
 seaborn = "*"
-jupyterlab = "*"
-scikit-image = "*"
-opencv-contrib-python = "*"
-imageio = "*"
-scikit-video = "*"
-spotipy = "*"
-"beautifulsoup4" = "*"
-yolk = "*"
 nltk = "*"
 pandas-profiling = "*"
-
-
-[dev-packages]
-
-pylint = "*"
-
+spacy = "*"
+slacker = "*"
+torch = {editable = true,version = "==1.2.0+cpu"}
+torchvision = "==0.4.0+cpu"
 
 [requires]
-
-python_version = "3.6"
+python_version = "3.7"
