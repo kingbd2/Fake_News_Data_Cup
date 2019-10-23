@@ -129,3 +129,25 @@ def combine_texts(train_df, article_df):
             text_list = list(texts)
         text_compiled = ''.join(text_list)
         train_df.iloc[i]['texts_compiled'] = text_compiled
+
+
+def create_article_metric (train_df, article_df, applied_summarization_function, new_column_name='new_column',  include_var=True):
+    feature_mean = []
+    feature_var = []
+    for i, (claim) in enumerate(zip(train_df.related_articles)):
+        feature_ = np.zeros([len(claim[0]), 1])
+        for k, article_id in enumerate(claim[0]):
+            target = article_df.loc[article_df['id'] == article_id]
+            if target.empty:
+                continue
+            # Need to replace brevity score with abstracted target measure in article_df
+            feature_[k-1, 0] = target[new_column_name].values
+        feature_mean.append(np.mean(feature_))
+        feature_var.append(np.var(feature_))
+    if include_var:
+        train_df['feature_mean'] = feature_mean
+        train_df['feature_var'] = feature_var
+        return train_df
+    else:
+        train_df['feature_mean'] = feature_mean
+        return train_df
