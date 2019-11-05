@@ -1042,6 +1042,18 @@ version = "1.11.2"
 
 [[package]]
 category = "main"
+description = "XGBoost Python Package"
+name = "xgboost"
+optional = false
+python-versions = ">=3.4"
+version = "0.90"
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[[package]]
+category = "main"
 description = "Backport of pathlib-compatible object wrapper for zip files"
 name = "zipp"
 optional = false
@@ -1052,7 +1064,7 @@ version = "0.6.0"
 more-itertools = "*"
 
 [metadata]
-content-hash = "d74a2151a011cf014fb38f47226c883066baae5a5ddf8946d26721b54a6a8fb3"
+content-hash = "0d5dde1442298a4a071a1902fdf8cdd15302ab5f5cfc296e8e627cee8e7c8ecd"
 python-versions = "^3.7"
 
 [metadata.hashes]
@@ -1152,4 +1164,5 @@ urllib3 = ["3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398", "
 wcwidth = ["3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e", "f4ebe71925af7b40a864553f761ed559b43544f8f71746c2d756c7fe788ade7c"]
 webencodings = ["a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78", "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"]
 wrapt = ["565a021fd19419476b9362b05eeaa094178de64f8361e44468f9e9d7843901e1"]
+xgboost = ["5ec073f6d68348784e9afdb831371fefb89de896d8eb58e79244ad05177c5753", "898f26bb66589c644d17deff1b03961504f7ad79296ed434d0d7a5e9cb4deae6", "d69f90d61a63e8889fd39a31ad00c629bac1ca627f8406b9b6d4594c9e29ab84"]
 zipp = ["3718b1cbcd963c7d4c5511a8240812904164b7f381b647143a89d3b98f9bcd8e", "f06903e9f1f43b12d371004b4ac7b06ab39a44adc747266928ae6debfa7b3335"]
